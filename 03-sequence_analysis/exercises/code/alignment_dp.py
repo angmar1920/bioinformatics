@@ -7,7 +7,15 @@ alignment algorithms from scratch, for educational purposes.
 
 Module 3 – Sequence Analysis
 Course: Bioinformatics Fundamentals
+
+Usage
+-----
+    python3 alignment_dp.py SEQ1 SEQ2 [--match M] [--mismatch X] [--gap G]
+
+If SEQ1 / SEQ2 are omitted, two default example sequences are used.
 """
+
+import argparse
 
 
 # ---------------------------------------------------------------------------
@@ -173,15 +181,37 @@ def smith_waterman(seq1, seq2, match=1, mismatch=-1, gap=-2):
 # Main: run both algorithms with example sequences
 # ---------------------------------------------------------------------------
 
+def parse_args():
+    """Parses command-line arguments for sequences and scoring parameters."""
+    parser = argparse.ArgumentParser(
+        description="Compare Needleman-Wunsch (global) and Smith-Waterman "
+                     "(local) alignment on a single pair of sequences."
+    )
+    parser.add_argument(
+        "seq1", nargs="?", default="ATGCGTACGTTAGCAATCG",
+        help="First sequence (default: %(default)s)",
+    )
+    parser.add_argument(
+        "seq2", nargs="?", default="ATGCGTACGCTAGCAATCA",
+        help="Second sequence (default: %(default)s)",
+    )
+    parser.add_argument("--match", type=int, default=1, help="Match score (default: 1)")
+    parser.add_argument("--mismatch", type=int, default=-1, help="Mismatch penalty (default: -1)")
+    parser.add_argument("--gap", type=int, default=-2, help="Gap penalty (default: -2)")
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
 
-    # Same sequences used in the README examples
-    seq1 = "GCATG"
-    seq2 = "GATTG"
+    args = parse_args()
 
-    MATCH    =  1
-    MISMATCH = -1
-    GAP      = -2
+    # Single pair of sequences, used to compare both alignment methods
+    seq1 = args.seq1.upper()
+    seq2 = args.seq2.upper()
+
+    MATCH    = args.match
+    MISMATCH = args.mismatch
+    GAP      = args.gap
 
     # --- Needleman-Wunsch (Global) ---
     print("=" * 55)
@@ -208,7 +238,12 @@ if __name__ == "__main__":
         else:
             match_line += "."
     print(f"  {match_line}")
-    print(f"\nScore: {score}\n")
+
+    # Calculate identity
+    matches = sum(1 for a, b in zip(aln1, aln2) if a == b)
+    identity = matches / len(aln1) * 100
+    print(f"\nScore: {score}")
+    print(f"Identity: {matches}/{len(aln1)} ({identity:.1f}%)\n")
 
     # --- Smith-Waterman (Local) ---
     print("=" * 55)
@@ -234,39 +269,10 @@ if __name__ == "__main__":
         else:
             match_line += "."
     print(f"  {match_line}")
-    print(f"\nScore: {score}\n")
-
-    # --- Bonus: try with longer biological sequences ---
-    print("=" * 55)
-    print("  BONUS: Longer sequences")
-    print("=" * 55)
-
-    gene_fragment1 = "ATGCGTACGTTAGCAATCG"
-    gene_fragment2 = "ATGCGTACGCTAGCAATCA"
-
-    print(f"\nSequences:")
-    print(f"  Seq1: {gene_fragment1}")
-    print(f"  Seq2: {gene_fragment2}\n")
-
-    aln1, aln2, score, _ = needleman_wunsch(gene_fragment1, gene_fragment2, MATCH, MISMATCH, GAP)
-
-    print("Global alignment:")
-    print(f"  {aln1}")
-    print(f"  {aln2}")
-    match_line = ""
-    for a, b in zip(aln1, aln2):
-        if a == b:
-            match_line += "*"
-        elif a == "-" or b == "-":
-            match_line += " "
-        else:
-            match_line += "."
-    print(f"  {match_line}")
-
-    # Calculate identity
-    matches = sum(1 for a, b in zip(aln1, aln2) if a == b)
-    identity = matches / len(aln1) * 100
     print(f"\nScore: {score}")
-    print(f"Identity: {matches}/{len(aln1)} ({identity:.1f}%)")
-    print()
+
+    # Calculate identity over the aligned (local) region
+    matches = sum(1 for a, b in zip(aln1, aln2) if a == b)
+    identity = matches / len(aln1) * 100 if aln1 else 0.0
+    print(f"Identity: {matches}/{len(aln1)} ({identity:.1f}%)\n")
 
