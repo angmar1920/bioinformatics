@@ -1,0 +1,111 @@
+proteins	genes	gene_name	kcat	rxns	notes	stoicho
+Q00955	YNR016C	ACC1	25		GECKO v2 manualModifications.m growth limiting	1
+P19414	YLR304C	ACO1	143		GECKO v2 manualModifications.m other changes - two step process	1
+Q01574	YAL054C	ACS1	62.4		GECKO v2 manual_data.txt	1
+P52910	YLR153C	ACS2	62.4		GECKO v2 manual_data.txt	1
+P04046	YMR300C	ADE4	55.6		GECKO v2 manualModifications.m topUsed	1
+		ADH*	900	r_0165, r_2115	GECKO v2 manual_data.txt - Curation etoh production
+	YPL061W	ALD6	2.7	r_0173, r_2116	Brenda s.a 1.2.1.4 sce (doi:10.1016/j.bbagen.2013.02.010) - Curation Growth etoh
+Q04728	YMR062C	ARG7	20.9		GECKO v2 manualModifications.m topUsed	1
+			0.67	r_0193, r_0194	GECKO v2 manualModifications.m - Curation growth trehalose
+P07251 + P00830 + P38077 + Q12165 + P21306 + P05626 + P30902 + Q12349 + P61829 + P00854 + P00856 + Q06405 + P09457 + P81450 + P81451 + Q12233 + P81449	YBL099W and YJR121W and YBR039W and YDL004W and YPL271W and YPL078C and YKL016C and YLR295C and Q0130 and Q0085 and Q0080 and YDR377W and YDR298C and YML081C-A and YOL077W-A and YPR020W and YDR322C-A	ATP1 and ATP2 and ATP3 and ATP16 and ATP15 and ATP4 and ATP7 and ATP14 and OLI1 and ATP6 and ATP8 and ATP17 and ATP5 and ATP18 and ATP19 and ATP20 and TIM11	120		https://doi.org/10.1073/pnas.1906569116	3 + 3 + 1 + 1 + 1 + 1 + 1 + 1 + 10 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1
+			120	r_1085,r_1086	Curation by Complex Data and EC:7.1.2.2
+P32796	YML042W	CAT2	257		GECKO v2 manual_data.txt	1
+P00549	YAL038W	CDC19	232		https://doi.org/10.1073/pnas.1906569116	1
+P00890	YNR001C	CIT1	141.3		GECKO v2 manual_data.txt	1
+P43635	YPR001W	CIT3	141.3		GECKO v2 manual_data.txt	1
+P00401 + P00410 + P00420 + P07255 + P04037 + P32799 + P00427 + Q01519 + P04039 + P10174 + P00425	Q0045 and Q0250 and Q0275 and YDL067C and YGL187C and YGL191W and YHR051W and YLR038C and YLR395C and YMR256C and YIL111W	COX1 and COX2 and COX3 and COX9 and COX4 and COX13 and COX6 and COX12 and COX8 and COX7 and COX5B	726		Brenda - Curation by grRule - P00044 (YJR048W = CYC1) not in complex portal	1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 2 + 1 + 1
+P00401 + P00410 + P00420 + P07255 + P04037 + P32799 + P00427 + Q01519 + P04039 + P10174 + P00424	Q0045 and Q0250 and Q0275 and YDL067C and YGL187C and YGL191W and YHR051W and YLR038C and YLR395C and YMR256C and YNL052W	COX1 and COX2 and COX3 and COX9 and COX4 and COX13 and COX6 and COX12 and COX8 and COX7 and COX5A	726		Brenda - Curation by grRule - P00044 (YJR048W = CYC1) not in complex portal	1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 2 + 1 + 1
+P00924	YGR254W	ENO1	230		https://doi.org/10.1073/pnas.1906569116	2
+P00925	YHR174W	ENO2	230		https://doi.org/10.1073/pnas.1906569116	2
+P07149 + P19097	YKL182W and YPL231W	FAS1 and FAS2	8.57	r_2140	GECKO v2 manualModifications.m topUsed	1 + 1
+P07149 + P19097	YKL182W and YPL231W	FAS1 and FAS2	7.5	r_2141	GECKO v2 manualModifications.m topUsed	1 + 1
+P14540	YKL060C	FBA1	32.5		GECKO v2 manual_data.txt	1
+P09201	YLR377C	FBP1	69.7		GECKO v2 manual_data.txt	1
+P32614	YEL047C	FRD1	15.4		GECKO v2 manual_data.txt	1
+P08417	YPL262W	FUM1	1035		GECKO v2 manual_data.txt	1
+P04385	YBR020W	GAL1	22.3		GECKO v2 manual_data.txt	1
+P04397	YBR019C	GAL10	40.8		GECKO v2 manual_data.txt	1
+P08431	YBR018C	GAL7	36		GECKO v2 manual_data.txt	1
+P14065	YOR120W	GCY1	0.11		GECKO v2 manualModifications.m curation carbon source	1
+P17709	YCL040W	GLK1	110.754		https://doi.org/10.1073/pnas.1906569116	1
+P38720	YHR183W	GND1	36.4		GECKO v2 manual_data.txt	1
+P53319	YGR256W	GND2	36.4		GECKO v2 manual_data.txt	1
+Q00055	YDL022W	GPD1	113		GECKO v2 manual_data.txt	1
+P41911	YOL059W	GPD2	113		GECKO v2 manual_data.txt	1
+P00950	YKL152C	GPM1	530		Brenda Kcat	1
+P12683	YML075C	HMG1	20.8		GECKO v2 manualModifications.m growth limiting	1
+P12684	YLR450W	HMG2	20.8		GECKO v2 manualModifications.m growth limiting	1
+P40106	YER062C	HOR2	11.16		GECKO v2 manual_data.txt	1
+P04806	YFR053C	HXK1	107.476		https://doi.org/10.1073/pnas.1906569116	1
+P04807	YGL253W	HXK2	107.884		https://doi.org/10.1073/pnas.1906569116	1
+			100	r_1166, r_1134, r_1139	https://doi.org/10.1073/pnas.1906569116	1
+			8.5449	r_1227	DLKcat - predicted for P38156, use same for all the reaction	1
+			41.2936	r_0916	DLKcat - predicted limiting in tunning, similar value observed in BRENDA	1
+P32191	YIL155C	GUT2	3.26		DLKcat - Curation carbon source	1
+P28240	YER065C	ICL1	32.8155		DLKcat	1
+Q12031	YPR006C	ICL2	13.2		GECKO v2 manual_data.txt	1
+P28834 + P28241	YNL037C and YOR136W	IDH1 and IDH2	187.64		Based on Complex Portal	4 + 4
+P21954	YDL066W	IDPH	28		GECKO v2 manual_data.txt	1
+P06168	YLR355C	ILV5	18.3		GECKO v2 manualModifications.m growth limiting	1
+P20967 + P19262 + P09624	YIL125W and YDR148C and YFL018C	KGD1 and KGD2 and LPD1	223.5		https://doi.org/10.1073/pnas.1906569116	1 + 1 + 1
+P20967 + P19262 + P09624 + P19955	YIL125W and YDR148C and YFL018C and YFR049W	KGD1 and KGD2 and LPD1 and YMR31	223.5		https://doi.org/10.1073/pnas.1906569116	1 + 1 + 1 + 1
+P36013	YKL029C	MAE1	134		GECKO v2 manual_data.txt	1
+P17505	YKL085W	MDH1	190.4		GECKO v2 manual_data.txt	1
+P30952	YNL117W	MLS1	19.2		GECKO v2 manual_data.txt	1
+P21826	YIR031C	MLS2	19.2		GECKO v2 manual_data.txt	1
+P40215	YMR145C	NDE1	500		GECKO v2 manual_data.txt	1
+Q07500	YDL085W	NDE2	500		GECKO v2 manual_data.txt	1
+P32340	YML120C	NDI1	500		GECKO v2 manual_data.txt	1
+P35172	YBR001C	NTH1	0.67	r_0193	GECKO v2 manualModifications.m curation carbon source	1
+P10963	YKR097W	PCK1	62		GECKO v2 manual_data.txt	1
+P16387 + P32473 + P12695 + P16451 + P09624	YER178W and YBR221C and YNL071W and YGR193C and YFL018C	PDA1 and PDB2 and LAT1 and PDX1 and LPD1	1140		Brenda kcat 1.2.4.1 e2p lipoyl domain - eco * 12 subunit number. Based on Complex Portal	24 + 24 + 60 + 12 + 12
+P06169	YLR044C	PDC1	145		https://doi.org/10.1073/pnas.1906569116	4
+P16467	YLR134W	PDC5	145		https://doi.org/10.1073/pnas.1906569116	4
+P26263	YGR087C	PDC6	65		https://doi.org/10.1073/pnas.1906569116	4
+P16861 + P16862	YGR240C and YMR205C	PFK1 and PFK2	642		Manual data	1 + 1
+P12709	YBR196C	PGI1	685		GECKO v2 manual_data.txt	1
+P00560	YCR012W	PGK1	354		Brenda 2.7.2.3	1
+P33401	YKL127W	PGM1	235		Brenda 5.4.2.11	1
+P37012	YMR105C	PGM2	235		Brenda 5.4.2.11	1
+			70.9	r_0362	GECKO v2 manualModifications.m growth limiting	1
+P52489	YOR347C	PYK2	232		https://doi.org/10.1073/pnas.1906569116	1
+P00127 + P00128 + P00163 + P07143 + P07256 + P07257 + P08067 + P08525 + P22289 + P37299	YFR033C and YDR529C and Q0105 and YOR065W and YBL045C and YPR191W and YEL024W and YJL166W and YGR183C and YHR001W-A	QCR6 and QCR7 and COB and CYT1 and COR1 and QRC2 and RIP1 and QRC8 and QRC9 and QRC10	110		Curation by grRule - P00044 (YJR048W = CYC1) not in complex portal	1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1
+P41277	YIL053W	RHR2	11.16		GECKO v2 manual_data.txt	1
+Q12189	YOR095C	RKI1	59.45		DLKcat	1
+P46969	YJL121C	RPE1	653		GECKO v2 manual_data.txt	1
+P10659	YLR180W	SAM1	13.0904		DLKcat	1
+Q00711 + P21801 + P33421 + P37298	YKL148C and YLL041C and YKL141W and YDR178W	SDH1 and SDH2 and SDH3 and SDH4	219.3		GECKO v2 manual_data.txt	1 + 1 + 1 + 1
+P38858	YHR163W	SOL3	107		Brenda s.a pfa	1
+P53315	YGR248W	SOL4	107		Brenda s.a pfa	1
+P15019	YLR354C	TAL1	75		GECKO v2 manualModifications.m topUsed	1
+P00360	YJL052W	TDH1	29		https://doi.org/10.1073/pnas.1906569116	4
+P00358	YJR009C	TDH2	32.4		https://doi.org/10.1073/pnas.1906569116	4
+P00359	YGR192C	TDH3	9.1		https://doi.org/10.1073/pnas.1906569116	4
+P23254	YPR074C	TKL1	69		GECKO v2 manual_data.txt	1
+P33315	YBR117C	TKL2	69		GECKO v2 manual_data.txt	1
+P00942	YDR050C	TPI1	500		Brenda 5.3.1.1	2
+P32861	YKL035W	UGP1	27		GECKO v2 manual_data.txt	1
+P11412	YNL241C	ZWF1	632.8		GECKO v2 manual_data.txt	1
+			1278	"r_0198, r_4378, r_4420"	GECKO v2 manualModifications.m curation carbon source	
+D4YIP5	AWM76_03655	SPXB	8.72		Brenda	1
+Q8ZND6	STM2338	PTA	3.35		Brenda	1
+P32476	YGR175C	ERG1	3.2438		DLKcat	1
+P25340	YGL012W	ERG4	1.5171		DLKcat	1
+P54781	YMR015C	ERG5	0.6045		DLKcat	1
+P38604	YHR072W	ERG7	18.4775		DLKcat	1
+P32462	YNL280C	ERG24	15.7061		DLKcat	1
+P53045	YGR060W	ERG25	0.2		DLKcat	1
+			79	r_1126, r_1127, r_1128, r_2034	https://doi.org/10.1073/pnas.1906569116	1
+P28777	YGL148W	ARO2	3.2314		DLKcat	1
+	YER090W and YKL211C or YDR354W	TRP2 and TRP3 or TRP4	6.0184	r_0202, r_0203	DLKcat	1
+P36148	YKR067W	GPT2	4.1615		DLKcat	1
+P05694	YER091C	MET6	2.804		DLKcat	1
+P38972	YGR061C	ADE6	5.6799		DLKcat	1
+P00931	YGL026C	TRP5	2.9264		DLKcat	1
+			0.01	r_0015, r_4192	Curation because high protein usage	1
+P39524	YAL026C	DRS2	0.2		Curation because high protein usage	1
+Q12674	YMR162C	DNF3	0.2		Curation because high protein usage	1
+P53037	YGR170W	PSD2	0.2		Curation because high protein usage	1
+P53943	YNL065W	AQR1	16.2781		DLKcat same as P36035	1
+P22219 + P22543 + Q02948 + Q05919	YBR097W and YLR240W and YPL120W and YLR360W	VPS15 and VPS30 and VPS34 and VPS38	0.01		Curation because high protein usage	1
